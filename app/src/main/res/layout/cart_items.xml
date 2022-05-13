@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="5dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/card"
+        android:elevation="20dp"
+        android:layout_height="120dp">
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/cart_ProductImage"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/cart_ProductName"
+            android:layout_toRightOf="@+id/cart_ProductImage"
+            android:text="Product Name"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/cart_ProductQuantity"
+            android:text="Quantity"
+            android:textColor="@color/black"
+           android:layout_toRightOf="@+id/cart_ProductImage"
+            android:layout_below="@+id/cart_ProductPrice"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_regular"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:id="@+id/cart_ProductPrice"
+            android:text="Product Price"
+            android:layout_below="@+id/cart_ProductName"
+            android:layout_toRightOf="@+id/cart_ProductImage"
+            android:paddingLeft="20dp"
+            android:textColor="@color/spotifygreen"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"></TextView>
+        <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:elevation="5dp"
+            app:backGroundColor="@color/white"
+            app:textColor="@color/spotifygreen"
+            android:id="@+id/Cart_Number_details"
+            app:finalNumber="10"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            app:initialNumber="1"
+            android:layout_below="@id/cart_ProductQuantity"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:src="@mipmap/delete"
+              android:id="@+id/cart_ProductDelete"
+              android:layout_below="@+id/cart_ProductQuantity"
+              android:layout_toRightOf="@+id/cart_ProductImage"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="5dp"
+              android:paddingLeft="20dp"></ImageView>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="40dp"
+       android:background="@drawable/toprelativedetails"
+       android:id="@+id/topRel">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Muslimart"
+           android:fontFamily="@font/poppins_medium"
+           android:layout_centerInParent="true"
+           android:textColor="@color/white"></TextView>
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="wrap_content"
+           android:src="@mipmap/menuwhite"
+           android:layout_centerVertical="true"
+           android:paddingLeft="20dp"
+           android:id="@+id/imgDrawer"></ImageView>
+
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/search"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:elevation="15dp"
+        android:background="@drawable/search"
+        android:layout_below="@+id/topRel">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"></TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/searchgreen"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"></ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search"
+        android:id="@+id/rlCategory"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/category"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:id="@+id/ctJewellery"
+                android:elevation="5dp"
+                android:background="@drawable/card"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/jewellery"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jewellery"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"></TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:id="@+id/ctComputer"
+                android:elevation="5dp"
+                android:background="@drawable/card"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/laptop"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Computers"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"></TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:id="@+id/ctClothes"
+                android:elevation="5dp"
+                android:background="@drawable/card"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/clothes"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothes"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"></TextView>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:id="@+id/ctBags"
+                android:elevation="5dp"
+                android:background="@drawable/card"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/bags"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bags"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"></TextView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="75dp"
+                android:layout_height="80dp"
+                android:id="@+id/ctShoes"
+                android:elevation="5dp"
+                android:background="@drawable/card"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/shoes"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerHorizontal="true">
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shoes"
+                    android:fontFamily="@font/poppins_regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="12sp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"></TextView>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <com.denzcoskun.imageslider.ImageSlider
+        android:id="@+id/slider"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/rlCategory"
+        android:layout_marginTop="5dp"
+        app:auto_cycle="true"
+        app:corner_radius="5"
+        app:delay="0"
+        app:period="1000"></com.denzcoskun.imageslider.ImageSlider>
+    
+    <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/DisplayProducts"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/slider"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCart"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/spotifygreen"
+        android:tint="@color/white"
+        android:src="@mipmap/cart3"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
+
+
+   <!-- <com.google.android.material.navigation.NavigationView-->
+       <!-- android:layout_width="wrap_content"-->
+       <!-- android:layout_height="match_parent"-->
+        <!--android:id="@+id/navigationView"-->
+        <!--app:headerLayout="@layout/header_menu"-->
+        <!--app:menu="@menu/main_menu"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:fitsSystemWindows="true"></com.google.android.material.navigation.NavigationView>-->
+
+
+
+</RelativeLayout>

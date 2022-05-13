@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/toprelativedetails"
+        android:id="@+id/topRel">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CART"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="17sp"></TextView>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:layout_above="@+id/btnProceed"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/cartList"
+        android:layout_below="@+id/topRel"
+        android:layout_marginTop="20dp"></androidx.recyclerview.widget.RecyclerView>
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="45dp"
+       android:layout_alignParentRight="true"
+       android:layout_marginBottom="5dp"
+       android:layout_alignParentBottom="true"
+       android:id="@+id/btnProceed"
+       android:orientation="horizontal">
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:background="@drawable/card"
+           android:id="@+id/rlTotal"
+           android:layout_height="match_parent">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/txtLabelTotal"
+               android:paddingLeft="5dp"
+               android:layout_centerVertical="true"
+               android:text="Total: "
+               android:textColor="@color/black"
+               android:textSize="20sp"
+               android:fontFamily="@font/poppins_medium"></TextView>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/poppins_regular"
+               android:textColor="@color/spotifygreen"
+               android:layout_centerVertical="true"
+               android:id="@+id/txtTotalAmount"
+               android:layout_toRightOf="@+id/txtLabelTotal"
+               android:text="1000"
+               android:paddingRight="6dp"
+               android:textSize="20sp"></TextView>
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="100dp"
+           android:id="@+id/rlCheckOut"
+           android:layout_height="match_parent"
+           android:onClick="openShipping"
+           android:background="@drawable/card"
+           android:layout_marginRight="10dp"
+           android:backgroundTint="@color/spotifygreen">
+
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="CHECKOUT"
+               android:layout_centerInParent="true"
+               android:fontFamily="@font/poppins_medium"
+               android:textColor="@color/white"></TextView>
+       </RelativeLayout>
+
+
+   </LinearLayout>
+
+
+</RelativeLayout>

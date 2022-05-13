@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/dashboardtitle">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgSignUp"
+            android:layout_centerInParent="true"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgSignUp"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"></TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@drawable/card"
+        android:id="@+id/rlSignIn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:elevation="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:hint="Usename"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/edittext"
+            android:padding="20dp"
+            android:textColor="@color/black">
+
+        </EditText>
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/edittext"
+            android:padding="20dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/edtEmail"
+            android:layout_marginTop="20dp">
+
+        </EditText>
+        <CheckBox
+            android:id="@+id/chkShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtPassword"
+            android:text="Show Password"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            >
+
+
+        </CheckBox>
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chkShowPassword"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Sign in"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/button">
+
+
+        </Button>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

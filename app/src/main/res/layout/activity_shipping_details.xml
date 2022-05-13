@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShippingDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/topRel"
+        android:layout_height="40dp"
+        android:background="@drawable/toprelativedetails">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shiiping Details"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:textSize="14sp"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@+id/topRel"
+        android:background="@drawable/card"
+        android:elevation="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtFisrtName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter First Name"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtLastName"
+            android:layout_below="@+id/edtFisrtName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Last Name"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtDeliveryAddress"
+            android:layout_below="@+id/edtLastName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Delivery Address "></EditText>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_below="@id/edtDeliveryAddress"
+            android:id="@+id/textinput"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/autoCompleteTextView"
+                android:fontFamily="@font/poppins_medium"
+                android:inputType="none"
+                android:layout_below="@+id/txtBusinessCategory"
+                android:text="Nairobi"></AutoCompleteTextView>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtPhoneNumber"
+            android:layout_below="@+id/textinput"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Phone Number "></EditText>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_below="@+id/edtPhoneNumber"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:textSize="20sp"
+             android:id="@+id/lblTotal"
+             android:fontFamily="@font/poppins_medium"
+             android:textColor="@color/black"
+             android:layout_marginLeft="20dp"
+             android:text="TOTAL :"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/edtPhoneNumber"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTotal"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/spotifygreen"
+            android:layout_toRightOf="@+id/lblTotal"
+            android:paddingLeft="10dp"
+            android:text="1000"></TextView>
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnProceed"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:text="Proceed"
+            android:onClick="openPayment"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/editbutton"></Button>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

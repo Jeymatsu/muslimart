@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Add_New_Product">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/rlTop"
+        android:background="@drawable/toprelativedetails">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtTitle"
+            android:text=""
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="15dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/spotifyblack"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="750dp"
+        android:layout_below="@+id/rlTop"
+        android:background="@drawable/card"
+        android:elevation="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtStoreName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Store Name"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtProductName"
+            android:layout_below="@+id/edtStoreName"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Product Name"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtProductPrice"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/edtProductName"
+            android:background="@drawable/editbutton"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:hint="Enter Product Price in Ksh"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/editbutton"
+            android:layout_below="@+id/edtProductPrice"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/edtProductDescription"
+            android:hint="Enter Product Description"
+            android:paddingLeft="10dp"></EditText>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_height="300dp"
+            android:elevation="20dp"
+            android:id="@+id/rlUpload"
+            android:background="@drawable/upload_image"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/edtProductDescription"
+            android:src="@mipmap/image">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgUpload"
+                android:src="@mipmap/image"
+                android:layout_centerInParent="true"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click To Upload Image"
+                android:textColor="@color/spotifyblack"
+                android:textSize="15dp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_below="@+id/imgUpload"
+                android:layout_centerInParent="true"></TextView>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlUpload"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnAddNewProduct"
+            android:layout_marginRight="10dp"
+            android:text="Add Product"
+            android:textColor="@color/spotifyblack"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/editbutton"></Button>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

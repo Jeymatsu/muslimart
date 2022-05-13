@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1096256195339",
+    "project_id": "muslimart2-8c64f",
+    "storage_bucket": "muslimart2-8c64f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096256195339:android:3ad809e7561bd09d3eb00e",
+        "android_client_info": {
+          "package_name": "com.example.muslimart2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096256195339-icl63mdgv3ulk4d060ept5knb4tbtdkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl-_MFYmKovdOuethqbzPJSQaQclVz9XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1096256195339-icl63mdgv3ulk4d060ept5knb4tbtdkb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

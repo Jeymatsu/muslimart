@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="250dp"
+        android:id="@+id/product_image_details"></ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:text="Product Name"
+        android:layout_marginTop="5dp"
+        android:id="@+id/product_Name_details"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_Name_details"
+        android:text="Product Description"
+        android:layout_marginTop="5dp"
+        android:id="@+id/product_Description_details"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_Description_details"
+        android:text="Product Price"
+        android:layout_marginTop="5dp"
+        android:id="@+id/product_price_details"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"></TextView>
+    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backGroundColor="@color/spotifygreen"
+        app:textSize="7sp"
+        app:initialNumber="1"
+        app:finalNumber="10"
+        android:layout_marginTop="30dp"
+        android:id="@+id/Number_details"
+        android:layout_below="@id/product_price_details"
+        android:layout_centerHorizontal="true"></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/addCart"
+        android:onClick="addCart"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@mipmap/cart2"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"></TextView>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

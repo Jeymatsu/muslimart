@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="240dp"
+        android:background="@drawable/dashboardtitle">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:id="@+id/imgSignUp"
+            android:layout_centerInParent="true"
+            ></ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:layout_below="@id/imgSignUp"
+            android:layout_centerInParent="true"
+            android:textSize="40sp"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/rlSignUp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/card"
+        android:elevation="30dp"
+
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/edtEmail"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Password"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Email"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black">
+
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/EdtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:layout_below="@+id/edtPassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/edittext"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Confirm Password"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black">
+
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EdtConfirmPassword"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Sign Up"
+            android:textColor="@color/white">
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EdtConfirmPassword"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/red"
+            android:fontFamily="@font/poppins_medium"
+            android:id="@+id/txtError">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

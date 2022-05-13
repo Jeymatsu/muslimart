@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".PaymentMethod">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlTop"
+        android:background="@drawable/toprelativedetails"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Payment Method"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_centerInParent="true"></TextView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/rlTop"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/card"
+        android:elevation="10dp"
+        android:outlineAmbientShadowColor="@color/black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rlPaymentAmount"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginRight="10dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TOTAL TO PAY"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/black"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1000 ksh"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/rlPaymentAmount"
+            android:id="@+id/rlBank"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/editbutton"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank Cards"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerVertical="true"
+                android:id="@+id/rdBank"></RadioButton>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/visa"></ImageView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:layout_below="@+id/rlBank"
+            android:background="@drawable/editbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rlMobile"
+            android:layout_marginTop="20dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rlLogo"
+                android:layout_height="50dp">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:text="Mobile Money"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"></RadioButton>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/airtel"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/imgAirtel"></ImageView>
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_toLeftOf="@id/imgAirtel"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imgMpesa"
+                    android:src="@mipmap/mpesa"
+                    ></ImageView>
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_below="@id/rlLogo"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textinput"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp">
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/autoCompleteTextView"
+                    android:fontFamily="@font/poppins_medium"
+                    android:inputType="none"
+                    android:layout_below="@+id/txtBusinessCategory"
+                    android:text="Select your operator"></AutoCompleteTextView>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textinput"
+                android:hint="Phone Number eg +254****"
+                android:paddingLeft="20dp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"></EditText>
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Proceed"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"></Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

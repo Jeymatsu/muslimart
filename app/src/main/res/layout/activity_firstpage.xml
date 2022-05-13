@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="300dp"
+        android:background="@drawable/toprelativedetails">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/textView"
+            android:text="Assalam Aleikum"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Hello,"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:elevation="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:onClick="openLoginActivity"
+            android:id="@+id/rlLogin"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttondetails">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LOGIN"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerInParent="true"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:onClick="openSignUpActivity"
+            android:id="@+id/rlSignUp"
+            android:layout_below="@+id/rlLogin"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttondetails">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGN UP"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerInParent="true"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:onClick="Continue"
+            android:id="@+id/rlContinue"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/rlSignUp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/buttondetails">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONTINUE"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_centerInParent="true"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/instagram_metro"></ImageView>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/twitter_metro"></ImageView>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/facebook_metro"></ImageView>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_alignParentBottom="true">
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/instagram_metro"></ImageView>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:src="@mipmap/twitter_metro"></ImageView>
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/facebook_metro"></ImageView>
+
+
+        </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

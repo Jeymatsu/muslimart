@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Muslimart2"
         tools:replace="android:theme,android:icon">
-
-        <activity android:name=".ShippingDetails"></activity>
-        <activity android:name=".PaymentMethod"></activity>
+        <activity android:name=".search"></activity>
+        <activity android:name=".ShippingDetails" />
+        <activity android:name=".PaymentMethod" />
         <activity android:name=".CartActivity" />
         <activity android:name=".ProductDetailsActivity" />
         <activity android:name=".Admin_Add_New_Product" />

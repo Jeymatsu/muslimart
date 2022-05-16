@@ -16,6 +16,8 @@ public class ShippingDetails extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shipping_details);
         txtTotal=findViewById(R.id.txtTotal);
+        shiptotal=getIntent().getExtras().get("total").toString();
+        txtTotal.setText("ksh "+ shiptotal);
 
 
     }

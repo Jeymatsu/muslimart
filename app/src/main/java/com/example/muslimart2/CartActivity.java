@@ -67,7 +67,9 @@ public class CartActivity extends AppCompatActivity {
                         int productPrice=((Integer.valueOf(model.getPrice()))) * Integer.valueOf(model.getQuantity());
                         totalAmount=totalAmount-productPrice;
                         txtTotal.setText("ksh "+String.valueOf(totalAmount));
-                        total= (String) txtTotal.getText();
+
+
+
 
                     }
                 });
@@ -90,8 +92,11 @@ public class CartActivity extends AppCompatActivity {
 
     }
     public void openShipping(View view){
+        String Total=String.valueOf(totalAmount);
         Intent intent=new Intent(CartActivity.this, ShippingDetails.class);
+        intent.putExtra("total",Total);
         startActivity(intent);
+        finish();
     }
 
 
